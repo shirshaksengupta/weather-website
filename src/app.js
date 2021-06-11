@@ -8,6 +8,9 @@ const { response } = require('express')
 
 const app = express()
 
+// Heroku port number
+const port = process.env.PORT || 3000
+
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
 
@@ -132,6 +135,11 @@ app.get('*', (req, res) => {
 
 // Start the server up
 // Only used one time
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
-}) // Port 3000
+// 3000 - When locally running it in PC
+// app.listen(3000, () => {
+//     console.log('Server is up on port 3000')
+// }) // Port 3000
+
+app.listen(port,()=>{
+    console.log('Weather app server is up')
+})

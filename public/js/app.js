@@ -44,7 +44,8 @@ weatherForm.addEventListener('submit', (event) => {
 
     console.log(location)
 
-    let QueryString = 'http://localhost:3000/weather?address=' + location
+    //let QueryString = 'http://localhost:3000/weather?address=' + location
+    let QueryString = '/weather?address=' + location
     
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
