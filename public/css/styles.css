@@ -1,0 +1,67 @@
+body {
+    color: #333333;
+    font-family: Arial;
+    max-width: 650px; /* How wide content can be */
+    margin: 0 auto; /* All of the contents show up in the center - 0 for top-bottom, auto is for left and right */
+    padding: 0 16px; /* 0 top-bottom, 16px between body content and left side edge */
+
+    /* Enabling flex box */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Body should take the entire browser size */
+}
+
+/* Want to keep footer at the bottom of the page */
+/* Main content i.e body should take the entire browser and push the footer down */
+.main-content {
+    flex-grow: 1;
+}
+
+/*
+    background: blue;
+    padding: 16px;  Between the background and footer text 
+    margin: 16px;  Space outside background box 
+*/
+
+footer {
+    color: #88888888;
+    border-top: 1px solid #eeeeee; /* Width solid/break-line color; Border on top of footer */
+    margin-top: 16px; /* Between footer-text and line */
+    padding: 16px 0; /* 16px for top and bottom; 0 for left and right  - Between line and above things*/ 
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* Targeting links inside of header */
+header a {
+    color: #88888888;
+    margin-right: 16px;
+    text-decoration: none; /* removing underline */
+}
+
+/* Targeting specific element - img/me.jpg */
+.portrait {
+    width: 150px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #88888888;
+    background: #88888888;
+    color: white;
+    padding: 8px;
+}
+

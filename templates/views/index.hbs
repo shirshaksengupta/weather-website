@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title> <!-- Will show weather as browser tab name -->
+        <link rel="icon" href="/img/weather.png"> <!-- Will show the icon on the tab -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get your weather!</p>
+            <!-- Creating a HTML form -->
+            <form>
+                <input placeholder="Location">
+                <button>
+                    Search
+                </button>
+            </form>
+            <!-- Will fill this paragraph dynamically in public/js/app.js-->
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/app.js"></script> <!-- Get the address data from client side js -->
+
+    </body>
+</html>

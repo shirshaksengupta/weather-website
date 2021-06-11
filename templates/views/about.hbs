@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title> <!-- Will show About as browser tab name -->
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <!-- class is used to represent that this image belongs to this class.
+                 So, in css, if we set attribute to portrait, then images under this
+                class will take those values -->
+            <img class="portrait" src="/img/me.jpg">
+        </div>
+
+        {{>footer}}
+    </body>
+</html>
